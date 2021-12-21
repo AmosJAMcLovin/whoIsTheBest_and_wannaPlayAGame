@@ -1,0 +1,54 @@
+<html>
+<head>   
+<script type="text/javascript">
+
+// Program name: Who is the best!
+// Purpose: Display which player has the highest score and showcase the difference.
+// Author: Amos Johnson 
+
+// Create Function to show the difference between scores
+function scoreDifference(score1, score2) {
+   // Declare Variable
+   var subtract = score1-score2;
+   
+   return subtract;
+}
+
+</script>
+</head>
+<body>
+<script type="text/javascript">
+   // Declare Variables
+   var difference;
+   var BR = "<br />";
+   
+   // prompt 1 for the first player's score
+   var player1 = prompt("Enter Player 1's Score:");
+   player1;
+
+   // prompt 2 for the second player's score
+   var player2 = prompt("Enter Player 2's Score:");
+   player2;
+   
+   // Adding Max and Min functions to the player score to easily detail the difference
+   var highScore = Math.max(player1, player2);
+   var lowScore = Math.min(player1, player2);
+
+   difference = scoreDifference(highScore, lowScore);
+   difference;
+
+   // If statement displaying results
+   if (player1 > player2) {
+      document.write("Player 1 wins by " + difference + " point(s)");
+      difference;
+   }
+   else if (player2 > player1) {
+      document.write("Player 2 wins by " + difference + " point(s)");
+      difference;
+   }
+   else {
+      document.write("ERROR! Please try again")
+   }
+</script> 
+</body>
+</html>

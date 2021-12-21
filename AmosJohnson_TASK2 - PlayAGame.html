@@ -1,0 +1,83 @@
+<html>
+<body>
+<script type="text/javascript">
+// Program name: Wanna Play a game?
+// Purpose: Asking the user if they would like to play a game?
+// Author: Amos Johnson 
+
+// Declare Variables
+var answer;
+var celebration;
+var subtraction;
+var BR = "<br />";
+
+// Adding an Uppercase function to be added in relation to the Yes option
+celebration = ("Hooray! ");
+celebrate = celebration.toUpperCase();
+
+// Adding an substr function to be added in relation to the No option
+subtraction = ("Sorry that you don't want to play with me :(");
+subtraction = subtraction.substr(42,2).toUpperCase();
+
+answer = prompt("Would you like to play a game?");
+answer;
+
+// Yes variations
+if (answer == "yes") {
+document.write(celebrate + BR + "So glad to be playing a game with you!");
+}
+else if (answer == "y") {
+document.write(celebrate + BR + "So glad to be playing a game with you!");
+}
+else if (answer == "Y") {
+document.write(celebrate + BR + "So glad to be playing a game with you!");
+}
+else if (answer == "Yes") {
+document.write(celebrate + BR + "So glad to be playing a game with you!");
+}
+else if (answer == "YES") {
+document.write(celebrate + BR + "So glad to be playing a game with you!");
+}
+else if (answer == "yeah") {
+document.write(celebrate + BR + "So glad to be playing a game with you!");
+}
+else if (answer == "Yeah") {
+document.write(celebrate + BR + "So glad to be playing a game with you!");
+}
+else if (answer == "YEAH") {
+document.write(celebrate + BR + "So glad to be playing a game with you!");
+}
+
+// No variations
+else if (answer == "no") {
+document.write(subtraction + BR + "Sorry that you don't want to play with me :(");
+}
+else if (answer == "n") {
+document.write(subtraction + BR + "Sorry that you don't want to play with me :(");
+}
+else if (answer == "N") {
+document.write(subtraction + BR + "Sorry that you don't want to play with me :(");
+}
+else if (answer == "No") {
+document.write(subtraction + BR + "Sorry that you don't want to play with me :(");
+}
+else if (answer == "NO") {
+document.write(subtraction + BR + "Sorry that you don't want to play with me :(");
+}
+else if (answer == "nope") {
+document.write(subtraction + BR + "Sorry that you don't want to play with me :(");
+}
+else if (answer == "Nope") {
+document.write(subtraction + BR + "Sorry that you don't want to play with me :(");
+}
+else if (answer == "NOPE") {
+document.write(subtraction + BR + "Sorry that you don't want to play with me :(");
+}
+// Error variation
+else {
+ document.write("Sorry – didn’t get that – please enter your choice again. (Use one of the following answer types:('yes', 'y', 'yeah', 'no', 'n' or 'nope'");
+}
+
+</script> 
+</body>
+</html>
